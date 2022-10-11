@@ -148,10 +148,20 @@ class _PomodoroState extends State<Pomodoro> {
                 ),
                 Padding(
                   padding: const EdgeInsets.symmetric(vertical: 28.0),
-                  child: ElevatedButton(
-                    onPressed: () => {},
-                    child: const Text('Submit'),
-                    //other properties
+                  child: Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                    children: [
+                      ElevatedButton(
+                        onPressed: () => {},
+                        child: const Text('Submit'),
+                        //other properties
+                      ),
+                      ElevatedButton(
+                        onPressed: () => {},
+                        child: const Text('Stop'),
+                        //other properties
+                      ),
+                    ],
                   ),
                 ),
               ],
